@@ -12,6 +12,8 @@ RUN npm install
 
 # Install Vue CLI globally
 RUN npm install -g @vue/cli
+RUN npm install @vue/cli-service --save-dev
+
 
 # Create Vue.js project with Vue 3 and skip prompts
 RUN vue create my-vue-project --preset default --default
